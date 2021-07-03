@@ -19,19 +19,18 @@ fun Application.configureRouting() {
 
         get("/todos/{id}") {
             val id = call.parameters["id"]
-            call.respondText ("Response for the item with the id #$id")
         }
 
         post("/todos") {
-            call.respondText("Hello World! This is Ktor!! ")
+
         }
 
         put("/todos/{id}") {
-            call.respondText("Hello World! This is Ktor!! ")
+
         }
 
         delete("/todos/{id}") {
-            call.respondText("Hello World! This is Ktor!! ")
+
         }
     }
 
